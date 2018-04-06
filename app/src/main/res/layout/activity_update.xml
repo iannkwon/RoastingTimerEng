@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.com.roastingtimer.roastingtimereng.UpdateActivity"
+    android:orientation="vertical"
+    android:background="#F0E68C"
+    android:weightSum="10"
+    android:id="@+id/layoutUpdate">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:id="@+id/tv_date"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="textStart"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Origin"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:id="@+id/et_originUp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:maxLength="23"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Temp"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/et_tempUp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="℃"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Humi"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/et_humiUp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Record"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="7"
+                android:id="@+id/tv_record"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Out"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:id="@+id/tv_out"
+                android:textSize="20dp"
+                android:textAlignment="textStart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Memo"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_weight="2"/>
+
+            <EditText
+                android:id="@+id/et_memo"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="7"
+                android:textSize="20dp"
+                android:scrollbars="vertical"
+                android:textAlignment="textStart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_update"
+                android:text="Update"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="80dp"
+                android:background="#A9A9A9"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_delete"
+                android:text="delete"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:background="#A9A9A9"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="1dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
